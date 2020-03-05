@@ -1,6 +1,7 @@
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Linq
+Imports System.Reflection
 Imports ImageOrginizer.BusinessRules
 
 Public Class frmMain
@@ -63,6 +64,12 @@ Public Class frmMain
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.FolderBrowserDialog2 = New System.Windows.Forms.FolderBrowserDialog()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnRemove = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtExtension = New System.Windows.Forms.TextBox()
+        Me.lbExtensions = New System.Windows.Forms.ListBox()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.lblEvaluate = New System.Windows.Forms.Label()
         Me.btnEvaluatePattern = New System.Windows.Forms.Button()
@@ -74,12 +81,6 @@ Public Class frmMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnOrigem = New System.Windows.Forms.Button()
         Me.txtSource = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lbExtensions = New System.Windows.Forms.ListBox()
-        Me.txtExtension = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.btnRemove = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -90,9 +91,9 @@ Public Class frmMain
         Me.btnOrganize.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrganize.Image = CType(resources.GetObject("btnOrganize.Image"), System.Drawing.Image)
         Me.btnOrganize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOrganize.Location = New System.Drawing.Point(374, 262)
+        Me.btnOrganize.Location = New System.Drawing.Point(417, 262)
         Me.btnOrganize.Name = "btnOrganize"
-        Me.btnOrganize.Size = New System.Drawing.Size(329, 69)
+        Me.btnOrganize.Size = New System.Drawing.Size(286, 69)
         Me.btnOrganize.TabIndex = 0
         Me.btnOrganize.Text = "&Organize"
         Me.btnOrganize.UseVisualStyleBackColor = False
@@ -103,6 +104,7 @@ Public Class frmMain
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.Lavender
         Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.ProgressBar1)
         Me.Panel1.Controls.Add(Me.lblEvaluate)
@@ -120,6 +122,71 @@ Public Class frmMain
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(760, 537)
         Me.Panel1.TabIndex = 8
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.GroupBox1.Controls.Add(Me.btnRemove)
+        Me.GroupBox1.Controls.Add(Me.btnAdd)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.txtExtension)
+        Me.GroupBox1.Controls.Add(Me.lbExtensions)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 202)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(373, 256)
+        Me.GroupBox1.TabIndex = 18
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Image File Extensions"
+        '
+        'btnRemove
+        '
+        Me.btnRemove.BackColor = System.Drawing.Color.Silver
+        Me.btnRemove.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRemove.Location = New System.Drawing.Point(13, 211)
+        Me.btnRemove.Name = "btnRemove"
+        Me.btnRemove.Size = New System.Drawing.Size(129, 30)
+        Me.btnRemove.TabIndex = 21
+        Me.btnRemove.Text = "&Remove"
+        Me.btnRemove.UseVisualStyleBackColor = False
+        '
+        'btnAdd
+        '
+        Me.btnAdd.BackColor = System.Drawing.Color.Silver
+        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.Location = New System.Drawing.Point(13, 126)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(129, 30)
+        Me.btnAdd.TabIndex = 20
+        Me.btnAdd.Text = "&Add >>"
+        Me.btnAdd.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(9, 45)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(143, 24)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "New Extension:"
+        '
+        'txtExtension
+        '
+        Me.txtExtension.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtExtension.Location = New System.Drawing.Point(13, 81)
+        Me.txtExtension.Name = "txtExtension"
+        Me.txtExtension.Size = New System.Drawing.Size(129, 26)
+        Me.txtExtension.TabIndex = 15
+        '
+        'lbExtensions
+        '
+        Me.lbExtensions.FormattingEnabled = True
+        Me.lbExtensions.ItemHeight = 24
+        Me.lbExtensions.Location = New System.Drawing.Point(177, 45)
+        Me.lbExtensions.Name = "lbExtensions"
+        Me.lbExtensions.Size = New System.Drawing.Size(114, 196)
+        Me.lbExtensions.TabIndex = 0
         '
         'ProgressBar1
         '
@@ -139,12 +206,12 @@ Public Class frmMain
         'btnEvaluatePattern
         '
         Me.btnEvaluatePattern.BackColor = System.Drawing.Color.Silver
-        Me.btnEvaluatePattern.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEvaluatePattern.Location = New System.Drawing.Point(360, 139)
+        Me.btnEvaluatePattern.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEvaluatePattern.Location = New System.Drawing.Point(417, 140)
         Me.btnEvaluatePattern.Name = "btnEvaluatePattern"
         Me.btnEvaluatePattern.Size = New System.Drawing.Size(97, 30)
         Me.btnEvaluatePattern.TabIndex = 15
-        Me.btnEvaluatePattern.Text = "Evaluate"
+        Me.btnEvaluatePattern.Text = "&Evaluate"
         Me.btnEvaluatePattern.UseVisualStyleBackColor = False
         '
         'txtPattern
@@ -152,7 +219,7 @@ Public Class frmMain
         Me.txtPattern.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPattern.Location = New System.Drawing.Point(164, 140)
         Me.txtPattern.Name = "txtPattern"
-        Me.txtPattern.Size = New System.Drawing.Size(174, 26)
+        Me.txtPattern.Size = New System.Drawing.Size(225, 26)
         Me.txtPattern.TabIndex = 14
         Me.txtPattern.Text = "yyyy (MM) MMMM"
         '
@@ -228,81 +295,16 @@ Public Class frmMain
         Me.txtSource.TabIndex = 7
         Me.txtSource.Text = "D:\Download\_Mobile Temp\MotoG3"
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.btnRemove)
-        Me.GroupBox1.Controls.Add(Me.btnAdd)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.txtExtension)
-        Me.GroupBox1.Controls.Add(Me.lbExtensions)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 202)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(322, 256)
-        Me.GroupBox1.TabIndex = 18
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Image File Extensions"
-        '
-        'lbExtensions
-        '
-        Me.lbExtensions.FormattingEnabled = True
-        Me.lbExtensions.ItemHeight = 24
-        Me.lbExtensions.Location = New System.Drawing.Point(186, 45)
-        Me.lbExtensions.Name = "lbExtensions"
-        Me.lbExtensions.Size = New System.Drawing.Size(114, 196)
-        Me.lbExtensions.TabIndex = 0
-        '
-        'txtExtension
-        '
-        Me.txtExtension.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtExtension.Location = New System.Drawing.Point(13, 81)
-        Me.txtExtension.Name = "txtExtension"
-        Me.txtExtension.Size = New System.Drawing.Size(129, 26)
-        Me.txtExtension.TabIndex = 15
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(9, 45)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(143, 24)
-        Me.Label4.TabIndex = 19
-        Me.Label4.Text = "New Extension:"
-        '
-        'btnAdd
-        '
-        Me.btnAdd.BackColor = System.Drawing.Color.Silver
-        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(13, 126)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(129, 30)
-        Me.btnAdd.TabIndex = 20
-        Me.btnAdd.Text = "Add >>"
-        Me.btnAdd.UseVisualStyleBackColor = False
-        '
-        'btnRemove
-        '
-        Me.btnRemove.BackColor = System.Drawing.Color.Silver
-        Me.btnRemove.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRemove.Location = New System.Drawing.Point(13, 211)
-        Me.btnRemove.Name = "btnRemove"
-        Me.btnRemove.Size = New System.Drawing.Size(129, 30)
-        Me.btnRemove.TabIndex = 21
-        Me.btnRemove.Text = "Remove X"
-        Me.btnRemove.UseVisualStyleBackColor = False
-        '
         'frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.BackColor = System.Drawing.Color.PeachPuff
+        Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmMain"
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Image Sync & Organizer"
         Me.Panel1.ResumeLayout(False)
@@ -345,6 +347,9 @@ Public Class frmMain
     End Sub
 
     Private Sub frmImageSync_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.Text = Application.ProductName & " - " & Application.CompanyName & "          Version: " & Assembly.GetEntryAssembly().GetName().Version.ToString()
+
         txtSource.Text = MyReg.Read("ImageOrganizerSource")
         txtTarget.Text = MyReg.Read("ImageOrganizerTarget")
         txtPattern.Text = MyReg.Read("ImageOrganizerPattern")
@@ -369,7 +374,8 @@ Public Class frmMain
 
         'todo: write extensions to registry
 
-        Dim extList() As String = {"*.jpg", "*.jpeg"}
+        Dim extList() As String = lbExtensions.Items.Cast(Of String).ToArray()
+
         Dim fileList As New List(Of FileInfo)
 
         'todo: get extensions from list
@@ -419,6 +425,44 @@ Public Class frmMain
         Else
             'todo: split and add extensions
         End If
+
+    End Sub
+
+    Private Sub lbExtensions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lbExtensions.SelectedIndexChanged
+
+
+
+        If lbExtensions.SelectedItem Is Nothing Then
+            btnRemove.Enabled = False
+        Else
+            btnRemove.Enabled = True
+        End If
+
+    End Sub
+
+    Private Sub txtExtension_TextChanged(sender As Object, e As EventArgs) Handles txtExtension.TextChanged
+
+        If txtExtension.Text.Length < 3 Or txtExtension.Text.Length > 6 Then
+            btnAdd.Enabled = False
+        ElseIf txtExtension.Text.Substring(0, 2) <> "*." Then
+
+            btnAdd.Enabled = False
+        Else
+            btnAdd.Enabled = True
+        End If
+
+    End Sub
+
+    Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
+        lbExtensions.Items.Remove(lbExtensions.SelectedItem)
+        btnRemove.Enabled = False
+
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        lbExtensions.Items.Add(txtExtension.Text)
+        btnAdd.Enabled = False
+        txtExtension.Text = String.Empty
 
     End Sub
 End Class
