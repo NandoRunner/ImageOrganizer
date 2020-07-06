@@ -93,6 +93,9 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FAndradeTI.Util, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FAndradeTI.Util.1.0.1\lib\net472\FAndradeTI.Util.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -161,12 +164,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Google Images_48px.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ImageOrganizer.BusinessRules\ImageOrganizer.BusinessRules.csproj">
-      <Project>{2c0d723e-3909-4d49-b979-9279399925ff}</Project>
-      <Name>ImageOrganizer.BusinessRules</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.7\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />

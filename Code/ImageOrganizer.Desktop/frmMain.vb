@@ -2,6 +2,7 @@ Imports System.Collections.Generic
 Imports System.IO
 Imports System.Linq
 Imports System.Reflection
+Imports FAndradeTI.Util
 Imports ImageOrginizer.BusinessRules
 
 Public Class frmMain
@@ -17,7 +18,7 @@ Public Class frmMain
 
         'Add any initialization after the InitializeComponent() call
 
-        MyReg.SubKey = "SOFTWARE\\" + Application.CompanyName + "\\" + Application.ProductName
+        WinReg.SubKey = "SOFTWARE\\" + Application.CompanyName + "\\" + Application.ProductName
 
     End Sub
 
@@ -350,9 +351,9 @@ Public Class frmMain
 
         Me.Text = Application.ProductName & " - " & Application.CompanyName & "          Version: " & Assembly.GetEntryAssembly().GetName().Version.ToString()
 
-        txtSource.Text = MyReg.Read("ImageOrganizerSource")
-        txtTarget.Text = MyReg.Read("ImageOrganizerTarget")
-        txtPattern.Text = MyReg.Read("ImageOrganizerPattern")
+        txtSource.Text = WinReg.Read("ImageOrganizerSource")
+        txtTarget.Text = WinReg.Read("ImageOrganizerTarget")
+        txtPattern.Text = WinReg.Read("ImageOrganizerPattern")
 
         Init()
 
@@ -368,9 +369,9 @@ Public Class frmMain
         'todo: verify fields
         Dim targetDir As String = txtTarget.Text
 
-        MyReg.Write("ImageOrganizerSource", txtSource.Text)
-        MyReg.Write("ImageOrganizerTarget", targetDir)
-        MyReg.Write("ImageOrganizerPattern", txtPattern.Text)
+        WinReg.Write("ImageOrganizerSource", txtSource.Text)
+        WinReg.Write("ImageOrganizerTarget", targetDir)
+        WinReg.Write("ImageOrganizerPattern", txtPattern.Text)
 
         'todo: write extensions to registry
 
@@ -417,7 +418,7 @@ Public Class frmMain
         btnAdd.Enabled = False
         btnRemove.Enabled = False
 
-        Dim aux As String = MyReg.Read("ImageOrganizerExtensions")
+        Dim aux As String = WinReg.Read("ImageOrganizerExtensions")
 
         If String.IsNullOrEmpty(aux) Then
             lbExtensions.Items.Add("*.jpg")
