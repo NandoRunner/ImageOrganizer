@@ -3,8 +3,8 @@ Imports System.IO
 Imports System.Linq
 Imports System.Reflection
 Imports FAndradeTI.Util
+Imports FAndradeTI.Util.FileSystem
 Imports ImageOrginizer.BusinessRules
-
 Public Class frmMain
     Inherits System.Windows.Forms.Form
 
@@ -89,7 +89,7 @@ Public Class frmMain
         'btnOrganize
         '
         Me.btnOrganize.BackColor = System.Drawing.Color.Silver
-        Me.btnOrganize.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnOrganize.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrganize.Image = CType(resources.GetObject("btnOrganize.Image"), System.Drawing.Image)
         Me.btnOrganize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnOrganize.Location = New System.Drawing.Point(417, 262)
@@ -199,7 +199,7 @@ Public Class frmMain
         'lblEvaluate
         '
         Me.lblEvaluate.AutoSize = True
-        Me.lblEvaluate.Location = New System.Drawing.Point(463, 150)
+        Me.lblEvaluate.Location = New System.Drawing.Point(520, 148)
         Me.lblEvaluate.Name = "lblEvaluate"
         Me.lblEvaluate.Size = New System.Drawing.Size(0, 13)
         Me.lblEvaluate.TabIndex = 16
@@ -208,9 +208,9 @@ Public Class frmMain
         '
         Me.btnEvaluatePattern.BackColor = System.Drawing.Color.Silver
         Me.btnEvaluatePattern.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEvaluatePattern.Location = New System.Drawing.Point(417, 140)
+        Me.btnEvaluatePattern.Location = New System.Drawing.Point(395, 139)
         Me.btnEvaluatePattern.Name = "btnEvaluatePattern"
-        Me.btnEvaluatePattern.Size = New System.Drawing.Size(97, 30)
+        Me.btnEvaluatePattern.Size = New System.Drawing.Size(97, 28)
         Me.btnEvaluatePattern.TabIndex = 15
         Me.btnEvaluatePattern.Text = "&Evaluate"
         Me.btnEvaluatePattern.UseVisualStyleBackColor = False
@@ -320,36 +320,22 @@ Public Class frmMain
 
     Private Sub btnDestino_Click(sender As Object, e As EventArgs) Handles btnDestino.Click
 
-        Using diag As FolderBrowserDialog = New FolderBrowserDialog()
-            diag.Description = "Selecione a pasta de destino..."
-            diag.SelectedPath = txtTarget.Text
-
-            Dim result As DialogResult = diag.ShowDialog()
-
-            If (result = DialogResult.OK) Then
-                txtTarget.Text = diag.SelectedPath
-            End If
-        End Using
+        'todo: buttons to explore folders
+        txtTarget.Text = FS.GetFolder(txtTarget.Text, "Select target folder...")
 
     End Sub
 
     Private Sub btnOrigem_Click(sender As Object, e As EventArgs) Handles btnOrigem.Click
-        Using diag As FolderBrowserDialog = New FolderBrowserDialog()
-            diag.Description = "Selecione a pasta de origem..."
-            diag.SelectedPath = txtSource.Text
 
-            Dim result As DialogResult = diag.ShowDialog()
-
-            If (result = DialogResult.OK) Then
-                txtSource.Text = diag.SelectedPath
-            End If
-        End Using
+        txtSource.Text = FS.GetFolder(txtSource.Text, "Select source folder...")
 
     End Sub
 
     Private Sub frmImageSync_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Me.Text = Application.ProductName & " - " & Application.CompanyName & "          Version: " & Assembly.GetEntryAssembly().GetName().Version.ToString()
+        Me.Text = Application.ProductName & " - " & Application.CompanyName
+
+        Me.Text += $"{New String(" ", 15)}Version: {Application.ProductVersion}"
 
         txtSource.Text = WinReg.Read("ImageOrganizerSource")
         txtTarget.Text = WinReg.Read("ImageOrganizerTarget")
@@ -364,9 +350,14 @@ Public Class frmMain
     End Sub
 
     Private Sub btnOrganize_Click(sender As Object, e As EventArgs) Handles btnOrganize.Click
-        Cursor.Hide()
 
-        'todo: verify fields
+
+        If String.IsNullOrEmpty(txtSource.Text) Or String.IsNullOrEmpty(txtTarget.Text) Then
+            MessageBox.Show("Please check source and target folders!", "Organize command", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            Return
+        End If
+
+        Cursor.Hide()
         Dim targetDir As String = txtTarget.Text
 
         WinReg.Write("ImageOrganizerSource", txtSource.Text)
@@ -411,7 +402,7 @@ Public Class frmMain
 
         Cursor.Show()
 
-        MsgBox(filesMoved & " images organized!")
+        MessageBox.Show(filesMoved & " images organized!", "Results", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
     Private Sub Init()

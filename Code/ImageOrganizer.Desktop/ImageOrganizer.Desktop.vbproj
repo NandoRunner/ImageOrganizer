@@ -93,8 +93,8 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FAndradeTI.Util, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FAndradeTI.Util.1.0.1\lib\net472\FAndradeTI.Util.dll</HintPath>
+    <Reference Include="FAndradeTI.Util, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FAndradeTI.Util.1.0.3\lib\net472\FAndradeTI.Util.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -159,9 +159,7 @@
     </None>
     <None Include="My Project\app.manifest" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Business\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Google Images_48px.ico" />
   </ItemGroup>
@@ -174,6 +172,12 @@
     <Analyzer Include="..\..\packages\Microsoft.NetCore.Analyzers.2.9.7\analyzers\dotnet\vb\Microsoft.NetCore.VisualBasic.Analyzers.dll" />
     <Analyzer Include="..\..\packages\Microsoft.NetFramework.Analyzers.2.9.7\analyzers\dotnet\vb\Microsoft.NetFramework.Analyzers.dll" />
     <Analyzer Include="..\..\packages\Microsoft.NetFramework.Analyzers.2.9.7\analyzers\dotnet\vb\Microsoft.NetFramework.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FAndradeTI.Utilities\FAndradeTI.Util.FileSystem\FAndradeTI.Util.FileSystem.csproj">
+      <Project>{024ebf21-4c3e-4ba0-af79-2ede68936b0f}</Project>
+      <Name>FAndradeTI.Util.FileSystem</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>

@@ -4,9 +4,9 @@
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
 "ProjectName" = "8:ImageOrganizer.Setup"
-"LanguageId" = "3:1033"
+"LanguageId" = "3:0"
 "CodePage" = "3:1252"
-"UILanguageId" = "3:1033"
+"UILanguageId" = "3:0"
 "SccProjectName" = "8:"
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
@@ -21,14 +21,44 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_ADDC5EF2788E4C16BFC92A37AC5D2C4B"
+        "MsmKey" = "8:_42668DCD13A7F81F4141E23B9051F415"
+        "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4C8811CEEC2043B5BCD1A43417B36C38"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F8639CEABAE233C0CC66886EB438FB7E"
+        "MsmKey" = "8:_5D780B72160946B877F3511AC750DFEE"
         "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8F36C5A6C1C160FCAAFFD03E0715D927"
+        "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8F36C5A6C1C160FCAAFFD03E0715D927"
+        "OwnerKey" = "8:_5D780B72160946B877F3511AC750DFEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BBAC42BA7DE9BF7D94C81E0C9D7B7DB0"
+        "OwnerKey" = "8:_8F36C5A6C1C160FCAAFFD03E0715D927"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BBAC42BA7DE9BF7D94C81E0C9D7B7DB0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,7 +70,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F8639CEABAE233C0CC66886EB438FB7E"
+        "OwnerKey" = "8:_42668DCD13A7F81F4141E23B9051F415"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5D780B72160946B877F3511AC750DFEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8F36C5A6C1C160FCAAFFD03E0715D927"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -138,10 +180,41 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ADDC5EF2788E4C16BFC92A37AC5D2C4B"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_42668DCD13A7F81F4141E23B9051F415"
             {
-            "SourcePath" = "8:..\\..\\..\\Resource\\_Images\\fatecinfo.ico"
-            "TargetName" = "8:fatecinfo.ico"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_42668DCD13A7F81F4141E23B9051F415"
+                    {
+                    "Name" = "8:FAndradeTI.Util.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FAndradeTI.Util.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C8811CEEC2043B5BCD1A43417B36C38"
+            {
+            "SourcePath" = "8:..\\..\\..\\ProjectResource\\images\\fandradeti.ico"
+            "TargetName" = "8:fandradeti.ico"
             "Tag" = "8:"
             "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
             "Condition" = "8:"
@@ -158,20 +231,82 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F8639CEABAE233C0CC66886EB438FB7E"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5D780B72160946B877F3511AC750DFEE"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ImageOrginizer.BusinessRules, Version=1.20.5.4216, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.FileSystem, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F8639CEABAE233C0CC66886EB438FB7E"
+                    "_5D780B72160946B877F3511AC750DFEE"
                     {
-                    "Name" = "8:ImageOrginizer.BusinessRules.dll"
+                    "Name" = "8:FAndradeTI.Util.FileSystem.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:ImageOrginizer.BusinessRules.dll"
+            "SourcePath" = "8:FAndradeTI.Util.FileSystem.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8F36C5A6C1C160FCAAFFD03E0715D927"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.IO.Compression.FileSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                "ScatterAssemblies"
+                {
+                    "_8F36C5A6C1C160FCAAFFD03E0715D927"
+                    {
+                    "Name" = "8:System.IO.Compression.FileSystem.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.IO.Compression.FileSystem.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BBAC42BA7DE9BF7D94C81E0C9D7B7DB0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:System.IO.Compression, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_BBAC42BA7DE9BF7D94C81E0C9D7B7DB0"
+                    {
+                    "Name" = "8:System.IO.Compression.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.IO.Compression.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
@@ -197,7 +332,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_161DEF4320984E5DB48EB30EA79F8773"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
@@ -218,7 +353,7 @@
                 {
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_E4508CDFC6AC4D9DB5ACB4868F12529D"
                     {
-                    "Name" = "8:FAndrade TecInfo Apps"
+                    "Name" = "8:FAndradeTI Apps"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
@@ -240,7 +375,7 @@
                 {
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_04DF4631E1D440F7836DAC65409032BF"
                     {
-                    "Name" = "8:FAndrade TecInfo Apps"
+                    "Name" = "8:FAndradeTI Apps"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
@@ -260,36 +395,36 @@
         }
         "MsiBootstrapper"
         {
-        "LangId" = "3:1033"
+        "LangId" = "3:0"
         "RequiresElevation" = "11:FALSE"
         }
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FAndrade TecInfo Image Organizer"
-        "ProductCode" = "8:{36B3555C-64F9-4C11-A8DC-9DCEA31E3836}"
-        "PackageCode" = "8:{61228504-D056-448C-88B0-AF6577324ED1}"
+        "ProductName" = "8:FAndradeTI Image Organizer"
+        "ProductCode" = "8:{969BCA58-7846-4C05-9DAC-173D519B4C47}"
+        "PackageCode" = "8:{66125D93-391B-40D7-BFA3-99DB60ECF2BE}"
         "UpgradeCode" = "8:{69383273-F975-4211-A2F5-2089F65A63F2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.20.6"
-        "Manufacturer" = "8:FAndrade TecInfo"
+        "ProductVersion" = "8:1.20.7"
+        "Manufacturer" = "8:FAndradeTI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Image Organizer"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:FAndrade TecInfo"
+        "ARPCONTACT" = "8:Fernando Andrade (NandoRunner)"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:Image Organizer"
+        "ARPCOMMENTS" = "8:Image Sync & Organizer"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_ADDC5EF2788E4C16BFC92A37AC5D2C4B"
+        "ARPPRODUCTICON" = "8:_4C8811CEEC2043B5BCD1A43417B36C38"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
