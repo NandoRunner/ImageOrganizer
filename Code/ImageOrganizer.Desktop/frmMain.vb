@@ -1,10 +1,9 @@
 Imports System.Collections.Generic
 Imports System.IO
 Imports System.Linq
-Imports System.Reflection
 Imports FAndradeTI.Util
 Imports FAndradeTI.Util.FileSystem
-Imports ImageOrginizer.BusinessRules
+Imports FAndradeTI.Util.WinForms
 Public Class frmMain
     Inherits System.Windows.Forms.Form
 
@@ -333,9 +332,7 @@ Public Class frmMain
 
     Private Sub frmImageSync_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Me.Text = Application.ProductName & " - " & Application.CompanyName
-
-        Me.Text += $"{New String(" ", 15)}Version: {Application.ProductVersion}"
+        Me.Text = AppInfo.GetFullTitle()
 
         txtSource.Text = WinReg.Read("ImageOrganizerSource")
         txtTarget.Text = WinReg.Read("ImageOrganizerTarget")
