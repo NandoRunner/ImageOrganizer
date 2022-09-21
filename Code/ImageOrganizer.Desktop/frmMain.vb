@@ -88,6 +88,7 @@ Public Class frmMain
         'btnOrganize
         '
         Me.btnOrganize.BackColor = System.Drawing.Color.Silver
+        Me.btnOrganize.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnOrganize.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrganize.Image = CType(resources.GetObject("btnOrganize.Image"), System.Drawing.Image)
         Me.btnOrganize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -142,6 +143,7 @@ Public Class frmMain
         'btnRemove
         '
         Me.btnRemove.BackColor = System.Drawing.Color.Silver
+        Me.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRemove.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRemove.Location = New System.Drawing.Point(13, 211)
         Me.btnRemove.Name = "btnRemove"
@@ -153,6 +155,7 @@ Public Class frmMain
         'btnAdd
         '
         Me.btnAdd.BackColor = System.Drawing.Color.Silver
+        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.Location = New System.Drawing.Point(13, 126)
         Me.btnAdd.Name = "btnAdd"
@@ -206,6 +209,7 @@ Public Class frmMain
         'btnEvaluatePattern
         '
         Me.btnEvaluatePattern.BackColor = System.Drawing.Color.Silver
+        Me.btnEvaluatePattern.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEvaluatePattern.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEvaluatePattern.Location = New System.Drawing.Point(395, 139)
         Me.btnEvaluatePattern.Name = "btnEvaluatePattern"
@@ -236,6 +240,7 @@ Public Class frmMain
         'btnDestino
         '
         Me.btnDestino.BackColor = System.Drawing.Color.DarkGray
+        Me.btnDestino.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDestino.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDestino.Image = CType(resources.GetObject("btnDestino.Image"), System.Drawing.Image)
         Me.btnDestino.Location = New System.Drawing.Point(709, 81)
@@ -277,6 +282,7 @@ Public Class frmMain
         'btnOrigem
         '
         Me.btnOrigem.BackColor = System.Drawing.Color.DarkGray
+        Me.btnOrigem.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnOrigem.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnOrigem.Image = CType(resources.GetObject("btnOrigem.Image"), System.Drawing.Image)
         Me.btnOrigem.Location = New System.Drawing.Point(709, 24)
