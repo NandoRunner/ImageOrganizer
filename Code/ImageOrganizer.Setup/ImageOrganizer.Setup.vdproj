@@ -21,13 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_42668DCD13A7F81F4141E23B9051F415"
-        "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5D780B72160946B877F3511AC750DFEE"
+        "MsmKey" = "8:_427287CE6F0C117297F71222F0D0BFCA"
         "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -40,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_8F36C5A6C1C160FCAAFFD03E0715D927"
-        "OwnerKey" = "8:_5D780B72160946B877F3511AC750DFEE"
+        "OwnerKey" = "8:_F4604174445491B1D86E798B423BE4D9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -53,6 +47,18 @@
         {
         "MsmKey" = "8:_D26ED1887C6741EBB9E0EA7E897558EB"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F4604174445491B1D86E798B423BE4D9"
+        "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FE0199288EE14ABD59C963C2DDC1C4B9"
+        "OwnerKey" = "8:_10B46463CFC1401782C82622983C99B0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,13 +76,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_42668DCD13A7F81F4141E23B9051F415"
+        "OwnerKey" = "8:_FE0199288EE14ABD59C963C2DDC1C4B9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5D780B72160946B877F3511AC750DFEE"
+        "OwnerKey" = "8:_F4604174445491B1D86E798B423BE4D9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_427287CE6F0C117297F71222F0D0BFCA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -180,51 +192,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_42668DCD13A7F81F4141E23B9051F415"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_427287CE6F0C117297F71222F0D0BFCA"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:FAndradeTI.Util, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_42668DCD13A7F81F4141E23B9051F415"
+                    "_427287CE6F0C117297F71222F0D0BFCA"
                     {
                     "Name" = "8:FAndradeTI.Util.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:FAndradeTI.Util.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5D780B72160946B877F3511AC750DFEE"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.FileSystem, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_5D780B72160946B877F3511AC750DFEE"
-                    {
-                    "Name" = "8:FAndradeTI.Util.FileSystem.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:FAndradeTI.Util.FileSystem.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
@@ -324,6 +305,68 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F4604174445491B1D86E798B423BE4D9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.FileSystem, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_F4604174445491B1D86E798B423BE4D9"
+                    {
+                    "Name" = "8:FAndradeTI.Util.FileSystem.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FAndradeTI.Util.FileSystem.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FE0199288EE14ABD59C963C2DDC1C4B9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FAndradeTI.Util.WinForms, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FE0199288EE14ABD59C963C2DDC1C4B9"
+                    {
+                    "Name" = "8:FAndradeTI.Util.WinForms.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FAndradeTI.Util.WinForms.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_161DEF4320984E5DB48EB30EA79F8773"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -402,15 +445,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:NandoRunner Image Organizer"
-        "ProductCode" = "8:{0CA30951-CC07-4D7C-9B5C-9BF6A45820F0}"
-        "PackageCode" = "8:{91A21374-4023-4C34-A6AD-349A3198C2BB}"
+        "ProductCode" = "8:{A01981B0-6D84-4E00-8F8B-9C4D0866D46B}"
+        "PackageCode" = "8:{18761553-B47E-4318-B52E-1C0582393B94}"
         "UpgradeCode" = "8:{69383273-F975-4211-A2F5-2089F65A63F2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.20.9"
+        "ProductVersion" = "8:1.22.0"
         "Manufacturer" = "8:FAndradeTI"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

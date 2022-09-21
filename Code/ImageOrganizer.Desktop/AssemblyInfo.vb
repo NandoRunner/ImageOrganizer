@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Image Sync and Organizer (VB.Net)")>
 <Assembly: AssemblyCompany("FAndradeTI (NandoRunner)")>
 <Assembly: AssemblyProduct("ImageOrganizer")>
-<Assembly: AssemblyCopyright("MIT License Copyright (c) 2016-2020 Fernando Andrade (NandoRunner)")>
+<Assembly: AssemblyCopyright("MIT License Copyright (c) 2016-2022 Fernando Andrade (NandoRunner)")>
 <Assembly: AssemblyTrademark("")> 
 <Assembly: CLSCompliant(True)> 
 
@@ -29,6 +29,6 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 
-<Assembly: AssemblyVersion("1.20.9")>
-<Assembly: AssemblyFileVersion("1.20.9")>
+<Assembly: AssemblyVersion("1.22.0")>
+<Assembly: AssemblyFileVersion("1.22.0")>
 <Assembly: ComVisible(False)>
