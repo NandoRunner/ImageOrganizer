@@ -338,6 +338,10 @@ Public Class frmMain
         txtTarget.Text = WinReg.Read("ImageOrganizerTarget")
         txtPattern.Text = WinReg.Read("ImageOrganizerPattern")
 
+        If String.IsNullOrEmpty(txtPattern.Text) Then
+            txtPattern.Text = "yyyy (MM) MMMM"
+        End If
+
         Init()
 
     End Sub
